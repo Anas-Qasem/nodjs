@@ -14,4 +14,4 @@ const commonCharacters = (arr = []) => {
   console.log(output);
 };
 
-commonCharacters(["acexivou", "aegihobu"]);
+commonCharacters(["acexivbou", "aegihobu","aib"]);
