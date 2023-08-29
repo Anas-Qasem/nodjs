@@ -32,10 +32,5 @@ function getUniqueValuesTwo(arr = []){
     }
     return finalArray;
 }
-
-
-
-
-
 const arrOfNum = [1, 6, 6, 4, 5, 7, 7];
 console.log(getUniqueValues(arrOfNum)); // [1, 2, 4, 5, 6]
