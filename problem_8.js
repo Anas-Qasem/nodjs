@@ -6,7 +6,7 @@ secondMax = (arr =[])=>{
             secondMax = max;
             max = arr[index];
         } else {
-            if (arr[index] > secondMax) {
+            if (arr[index] > secondMax &&  arr[index] < max) {
                 secondMax = arr[index];
             }
          
@@ -24,7 +24,7 @@ secondMax = (arr =[])=>{
     
 }
 // console.log( secondMax([1,5, 2])) //== 2
-console.log( secondMax([-1,-2,-3])) //== 2
+console.log( secondMax([8,26,44,-17,24,44,-4,-1,7,-9,20,28,27,8,43])) //== 2
 // console.log( secondMax([-1, -5, 2])) //== -1
 // console.log( secondMax([-3, -2, -7])) // == -3
 // console.log(secondMax([99 , 7 , 6, -33 , 114])) ; // ==99
