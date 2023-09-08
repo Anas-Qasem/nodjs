@@ -1,6 +1,6 @@
 secondMax = (arr =[])=>{
     let max = arr[0];
-    let secondMax = 0;
+    let secondMax = undefined;
     for (let index = 1; index < arr.length; index++) {
         if (max < arr[index]) {
             secondMax = max;
@@ -13,7 +13,7 @@ secondMax = (arr =[])=>{
         }
     }
     // that mean array is already sorted or there is only on item
-    if (secondMax == 0) {
+    if (secondMax === undefined) {
         if (arr.length === 1) {
             secondMax = max;
         } else {
@@ -24,7 +24,8 @@ secondMax = (arr =[])=>{
     
 }
 // console.log( secondMax([1,5, 2])) //== 2
-console.log( secondMax([8,26,44,-17,24,44,-4,-1,7,-9,20,28,27,8,43])) //== 2
+console.log( secondMax([-17,-17,-15,1,-29,-29,-19,0,-12,-14,-20,-19,-27,-18,-24])) //== 0
 // console.log( secondMax([-1, -5, 2])) //== -1
 // console.log( secondMax([-3, -2, -7])) // == -3
-// console.log(secondMax([99 , 7 , 6, -33 , 114])) ; // ==99
+// console.log(secondMax([99 , 7 , 6, -33 , 114])) ; // ==99\
+
