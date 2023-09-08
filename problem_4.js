@@ -22,12 +22,12 @@ function getUniqueValuesTwo(arr = []){
     // get Unique Values
     let finalArray = [];
     finalArray.push(arr[0]);
-    let indexDiffrenet = 1;
+    let indexDifferent = 1;
     for (let index = 1; index < arr.length; index++) {
-        if (arr[index] != finalArray[index-indexDiffrenet] ) {
+        if (arr[index] != finalArray[index-indexDifferent] ) {
             finalArray.push(arr[index]);
         }else {
-            indexDiffrenet++;
+            indexDifferent++;
         }
     }
     return finalArray;

@@ -1,13 +1,13 @@
 const commonCharacters = (arr = []) => {
-  // get minmun item len
-  var minmunStringLen = arr.reduce((a, b) => (a.length <= b.length ? a : b));
-  // remove the minmun String Len
-  arr = arr.filter((item) => item !== minmunStringLen);
-  isCharExsit = (value, char) => value.includes(char);
+  // get minium item len
+  var miniumStringLen = arr.reduce((a, b) => (a.length <= b.length ? a : b));
+  // remove the minium String Len
+  arr = arr.filter((item) => item !== miniumStringLen);
+  isCharExist = (value, char) => value.includes(char);
   let output = "";
-  for (let i = 0; i < minmunStringLen.length; i++) {
-    let char = minmunStringLen[i];
-    if (arr.every((value)=>isCharExsit(value,char))) {
+  for (let i = 0; i < miniumStringLen.length; i++) {
+    let char = miniumStringLen[i];
+    if (arr.every((value)=>isCharExist(value,char))) {
         output += char;
     }
   }
